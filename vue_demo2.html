@@ -10,15 +10,21 @@
 
 <div id="vueapp">
     {{ greeting }}
+    {{ message }}
 </div>
+
+
 
 <script>
     var app = new Vue({
         el: '#vueapp',
         data: {
-            greeting: 'Hello World!'
+            greeting: 'Hello World!',
+            message: "I'm learning VUE for the first time!",
         }
     });
+
+    
 </script>
     
 </body>

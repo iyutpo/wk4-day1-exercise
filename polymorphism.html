@@ -24,17 +24,23 @@ DogType.runNumber = function(speed){ //attach a sub method to prototype
 }
 
 //Create Method 2
-
+DogType.eat = function(food) {
+  if (food == 'dry') {
+    console.log('The dog eats ' + food + ' food');
+  } else if (food == 'wet') {
+    console.log('The dog eats ' + food + ' food');
+  }
+}
 
 //Create an object
 var dog = new Dog();
 
 //Apply method 1 to object
-dog.run(); //The dog runs at a speed of 15 miles/hr
-dog.run(); //The dog runs at a speed of 20 miles/hr
+dog.run(15); //The dog runs at a speed of 15 miles/hr
+dog.run('20 Miles/hr'); //The dog runs at a speed of 20 miles/hr
 
 //Apply method 2 to object
-
+dog.eat('dry');
 
 </script>
 

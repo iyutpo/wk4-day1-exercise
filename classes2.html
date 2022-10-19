@@ -10,7 +10,9 @@ function Person() {
             this.firstName = "unknown";
             this.lastName = "unknown";
             //Create a method
-            
+            this.getFullName = function() {
+                return this.firstName + ' ' + this.lastName;
+            }
         };
 
 //Create object 1
@@ -19,7 +21,7 @@ person1.firstName = "Steve";
 person1.lastName = "Jobs";
 
 //apply method
-
+alert(person1.getFullName());
 
 //Create object 2
 var person2 = new Person();
@@ -27,7 +29,7 @@ person2.firstName = "Bill";
 person2.lastName = "Gates";
 
 //apply method
- 
+alert(person2.getFullName());
 
 </script>
 
