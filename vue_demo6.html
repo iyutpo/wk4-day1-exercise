@@ -15,7 +15,7 @@
         <mycomponent2></mycomponent2>
      </div>
      <div id = "component3">
-        
+        <mycomponent2></mycomponent2>
      </div>
 
 <script>
@@ -25,14 +25,20 @@
     Vue.component('mycomponent2',{
         template : '<div><p>VUE is interesting!</p></div>'
     });
+    Vue.component('mycomponent3',{
+        template : '<div><p>VUE is interesting!</p></div>'
+    });
     var vm1 = new Vue({
         el: '#component1'
     });
     var vm2 = new Vue({
         el: '#component2'
     });
+    var vm3 = new Vue({
+        el: '#component3'
+    });
 </script>
     
-</body>`
+</body>
 </html>
 
